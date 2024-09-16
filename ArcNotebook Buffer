@@ -1,0 +1,8 @@
+#name: Buffer in python #description: Create a 20 m buffer around the Public Status Roadway map using the arcpy buffer tool
+
+#import arcpy
+
+import arcpy
+#define in features, out feature class, buffer distance, line side, line end type, and dissolve
+
+arcpy.analysis.Buffer('SDW_INCDT.PUBLIC_STATUS', 'SDW_INCDT_Buffer_in_Python', 20, 'FULL', 'ROUND', 'NONE')
